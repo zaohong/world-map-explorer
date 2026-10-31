@@ -8,29 +8,49 @@
 
 ## 界面截图
 
-以下展示图来自当前公开版本 1.23.0。地图底图统一使用 Natural Earth 10m 高清底图；NASA 专题图使用 NASA Blue Marble 及其 1 km、500 m 细节影像。截图的定位档位设为 627,200 格，细格放大图开启网格线。历史政权、2026 年国别、2023 年人口和 2020 年土地覆盖分别单独展示，历史透明度另有同视角对照。
+以下展示图来自当前公开版本 1.23.0，按基础地图、专题图层和历史政权分类。纯底图与高清局部图使用 Natural Earth 10m 或 NASA 底图；网格档位为 627,200 格。历史政权填色、年份、透明度和网格线对照均有成组截图。
 
-| 细格定位与高清底图 | 历史疆域与透明度对照 |
+### 基础地图与专题
+
+| Natural Earth 10m 全球底图 | NASA Blue Marble 全球底图 |
 | --- | --- |
-| [<img src="screenshots/02-fine-grid-location.png" width="100%" alt="日本区域的 627,200 格细格定位与 Natural Earth 高清底图">](./screenshots/02-fine-grid-location.png) | [<img src="screenshots/08-history-europe-1600-opacity-72.png" width="100%" alt="公元 1600 年欧洲历史政权填色，默认透明度 72%">](./screenshots/08-history-europe-1600-opacity-72.png) |
+| [<img src="screenshots/01-world-overview.png" width="100%" alt="Natural Earth 10m 全球高清底图">](./screenshots/01-world-overview.png) | [<img src="screenshots/16-nasa-blue-marble.png" width="100%" alt="NASA Blue Marble 全球底图">](./screenshots/16-nasa-blue-marble.png) |
 
-| 历史填色 25% | 历史填色 100% |
+| 627,200 格 · 网格线开启 | 同一地点 · 网格线关闭 |
 | --- | --- |
-| [<img src="screenshots/08a-history-europe-1600-opacity-25.png" width="100%" alt="同一欧洲历史疆域视角，填色透明度 25%">](./screenshots/08a-history-europe-1600-opacity-25.png) | [<img src="screenshots/08b-history-europe-1600-opacity-100.png" width="100%" alt="同一欧洲历史疆域视角，填色透明度 100%">](./screenshots/08b-history-europe-1600-opacity-100.png) |
+| [<img src="screenshots/02-fine-grid-location.png" width="100%" alt="日本 627,200 格细格定位，网格线开启">](./screenshots/02-fine-grid-location.png) | [<img src="screenshots/02a-fine-grid-location-no-gridlines.png" width="100%" alt="日本同一细格视角，网格线关闭">](./screenshots/02a-fine-grid-location-no-gridlines.png) |
 
-| 2026 年国别分区 | WorldPop 2023 人口估算 |
+| 欧洲高清局部 | 非洲高清局部 |
 | --- | --- |
-| [<img src="screenshots/09-country-regions-2026.png" width="100%" alt="2026 年国家与地区分类填色，使用高清底图">](./screenshots/09-country-regions-2026.png) | [<img src="screenshots/11-population-2023.png" width="100%" alt="WorldPop 2023 人口密度估算专题图，使用高清底图">](./screenshots/11-population-2023.png) |
+| [<img src="screenshots/15-natural-earth-high-resolution.png" width="100%" alt="Natural Earth 高清底图欧洲局部放大">](./screenshots/15-natural-earth-high-resolution.png) | [<img src="screenshots/15a-natural-earth-africa-detail.png" width="100%" alt="Natural Earth 高清底图非洲局部放大">](./screenshots/15a-natural-earth-africa-detail.png) |
 
-| 2020 年土地覆盖 | NASA Blue Marble 底图 |
+| 安第斯山脉高清局部 | 喜马拉雅山脉高清局部 |
 | --- | --- |
-| [<img src="screenshots/13-land-cover-2020.png" width="100%" alt="2020 年土地覆盖专题图，使用高清底图">](./screenshots/13-land-cover-2020.png) | [<img src="screenshots/16-nasa-blue-marble.png" width="100%" alt="NASA Blue Marble 全球底图">](./screenshots/16-nasa-blue-marble.png) |
+| [<img src="screenshots/15b-natural-earth-andes-detail.png" width="100%" alt="Natural Earth 高清底图安第斯山脉局部放大">](./screenshots/15b-natural-earth-andes-detail.png) | [<img src="screenshots/15c-natural-earth-himalaya-detail.png" width="100%" alt="Natural Earth 高清底图喜马拉雅山脉局部放大">](./screenshots/15c-natural-earth-himalaya-detail.png) |
 
-| NASA 1 km 细节 | NASA 500 m 细节 |
+| WorldPop 2023 人口 | 2020 年土地覆盖 |
 | --- | --- |
-| [<img src="screenshots/17-nasa-detail-1km.png" width="100%" alt="NASA 1 km 高分辨率卫星影像细节">](./screenshots/17-nasa-detail-1km.png) | [<img src="screenshots/18-nasa-detail-500m.png" width="100%" alt="NASA 500 m 高分辨率卫星影像细节">](./screenshots/18-nasa-detail-500m.png) |
+| [<img src="screenshots/11-population-2023.png" width="100%" alt="WorldPop 2023 全球人口密度估算">](./screenshots/11-population-2023.png) | [<img src="screenshots/13-land-cover-2020.png" width="100%" alt="2020 年全球土地覆盖类别">](./screenshots/13-land-cover-2020.png) |
 
-完整 22 张展示图（含多个历史时期、地区放大图、专题图层、历史事件和全屏地图）见[截图画廊](./screenshots/README.md)。归档检查素材另见 [`1.23.0/qa`](./当前补丁/迭代工作/1.23.0/qa/)。
+项目实际提供的是 2020 年土地覆盖图层（如植被、农地等类别），并非土壤成分或土壤类型图。人口与土地覆盖局部图、2026 年国别分区和 NASA 1 km／500 m 细节图见[完整画廊](./screenshots/README.md)。
+
+### 历史政权与透明度
+
+全球历史填色覆盖 8 个展示节点：公元前 1000 年、公元 476 年、公元 1000 年、公元 1200 年、公元 1600 年、公元 1800 年、公元 1914 年和公元 2024 年。完整年份序列与各时期原图见[历史政权截图画廊](./screenshots/README.md)。
+
+| 公元 1600 年 · 默认 72% | 公元 1600 年 · NASA 底图 |
+| --- | --- |
+| [<img src="screenshots/08-history-europe-1600-opacity-72.png" width="100%" alt="1600 年欧洲历史政权填色，默认透明度 72%">](./screenshots/08-history-europe-1600-opacity-72.png) | [<img src="screenshots/16a-history-1600-nasa-base.png" width="100%" alt="NASA 全球底图上的 1600 年历史政权填色">](./screenshots/16a-history-1600-nasa-base.png) |
+
+| 局部放大 · 60% | 局部放大 · 90% | 局部放大 · 100% |
+| --- | --- | --- |
+| [<img src="screenshots/08d-history-europe-1600-detail-opacity-60.png" width="100%" alt="历史政权局部放大，60% 透明度">](./screenshots/08d-history-europe-1600-detail-opacity-60.png) | [<img src="screenshots/08c-history-europe-1600-detail-opacity-90.png" width="100%" alt="历史政权局部放大，90% 透明度">](./screenshots/08c-history-europe-1600-detail-opacity-90.png) | [<img src="screenshots/08e-history-europe-1600-detail-opacity-100.png" width="100%" alt="历史政权局部放大，100% 透明度">](./screenshots/08e-history-europe-1600-detail-opacity-100.png) |
+
+| 90% · 网格线关闭 | 同一视角 · 网格线开启 |
+| --- | --- |
+| [<img src="screenshots/08c-history-europe-1600-detail-opacity-90.png" width="100%" alt="历史局部图关闭网格线">](./screenshots/08c-history-europe-1600-detail-opacity-90.png) | [<img src="screenshots/08f-history-europe-1600-detail-opacity-90-gridlines.png" width="100%" alt="历史局部图开启网格线">](./screenshots/08f-history-europe-1600-detail-opacity-90-gridlines.png) |
+
+完整画廊共 35 张原图，另含 25%／72%／100% 同视角透明度对照、8 个历史年份、2026 年国别、人口与土地覆盖局部图、历史事件和全屏地图。归档检查素材另见 [`1.23.0/qa`](./当前补丁/迭代工作/1.23.0/qa/)。
 
 ## 功能一览
 
@@ -61,7 +81,7 @@
 | [`当前补丁/迭代工作/1.23.0/native`](./当前补丁/迭代工作/1.23.0/native/) | Windows 主程序、专题数据生成工具及相关源码 |
 | [`当前补丁/迭代工作/1.23.0/source-data`](./当前补丁/迭代工作/1.23.0/source-data/) | 历史疆域、历史事件、Natural Earth 输入和来源说明 |
 | [`当前补丁/迭代工作/1.23.0/qa`](./当前补丁/迭代工作/1.23.0/qa/) | 自动检查源码、运行记录和 35 张界面截图 |
-| [`screenshots`](./screenshots/) | 按专题整理的 22 张高清界面展示图，均可点击查看原图 |
+| [`screenshots`](./screenshots/) | 按基础地图、专题图层和历史政权整理的 35 张高清界面展示图 |
 | [`当前补丁/迭代工作/1.22.0`](./当前补丁/迭代工作/1.22.0/) | 保留的旧版源码、截图和检查记录 |
 | [`当前补丁/迭代工作/必要数据源`](./当前补丁/迭代工作/必要数据源/) | 原始数据说明和重建工具 |
 | [`交接文档`](./交接文档/) | 架构、来源、校准和历史变更资料 |
