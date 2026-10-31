@@ -1,2 +1,24 @@
-# world-map-explorer
-Offline Windows world map explorer with a complete 1.23.0 runtime package.
+# 世界地图分区档案
+
+Windows 10/11 64 位离线世界地图程序，最新公开版本为 **1.23.0**。完整运行包请从本仓库的 **Releases** 页面下载 `WorldMapExplorer-1.23.0.zip`。
+
+## 安装和启动
+
+1. 下载并解压完整 ZIP。
+2. 进入 `WorldMapExplorer-1.23.0` 文件夹，双击 `WorldMapExplorer.exe`。
+3. 保留同目录下的 `assets`、`data`、`licenses` 和来源说明文件；不要只复制 EXE。
+
+无需安装额外运行库或联网下载地图。首次启动后，可离线浏览和切换图层。
+
+## 功能
+
+- 四档格网：9,800、39,200、156,800、627,200 格，支持坐标、编号、地点及专题数据查询。
+- 标准、Natural Earth 高清与 NASA 底图，以及世界2026国别、历史疆域、人口和土地覆盖专题层。
+- 601 个离线历史年份，公元前3400年至公元2024年；历史事件卡片附来源链接。
+- 地图缩放、平移、全屏、格网显示控制和透明度调整。
+
+## 数据与说明
+
+程序和数据来源、许可说明均随完整发行包提供，详见 `DATA_SOURCES.md` 和 `licenses/`。历史边界覆盖度因年代和地区而异；未填色区域表示来源中未匹配到记录，不代表无人居住或主权结论。
+
+完整发行包 SHA-256：`476C02639BEADC6D1F3A42915A8894BE36CCAE478D16283BB48808BE712B0979`
