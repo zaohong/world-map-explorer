@@ -1,0 +1,1 @@
+PASS: all 3,903 assets match 1.22.0 byte for byte; source pixels were not changed

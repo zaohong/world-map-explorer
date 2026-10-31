@@ -1,0 +1,23 @@
+# The complete Windows builds are published as versioned release archives.
+/当前补丁/WorldMapExplorer-1.22.0/
+/当前补丁/WorldMapExplorer-1.23.0/
+/当前补丁/WorldMapExplorer-1.23.0.zip
+/当前补丁/GitHub-README.md
+
+# Oversized original datasets are attached to the matching GitHub Release.
+/当前补丁/迭代工作/必要数据源/Natural-Earth-High-Resolution/NE1_HR_LC_SR_W_DR.zip
+/当前补丁/迭代工作/必要数据源/WorldPop-2023/global_pop_2023_CN_1km_R2025A_UA_v1.tif
+
+# Local Windows shortcuts and machine-specific entry points.
+*.lnk
+/运行最新版.cmd
+/回退至1.22.0.cmd
+Thumbs.db
+desktop.ini
+
+# Temporary compiler outputs.
+*.obj
+*.pdb
+*.res
+*.ilk
+*.pch

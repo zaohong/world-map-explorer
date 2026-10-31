@@ -1,0 +1,41 @@
+const fs = require('fs');
+const path = require('path');
+
+const dataDir = process.argv[2];
+const yearHeaderPath = process.argv[3];
+if (!dataDir || !yearHeaderPath) throw new Error('Usage: node world_event_checks.js <runtime-data-directory> <history-years-header>');
+const file = path.join(dataDir, 'world-events.tsv');
+const text = fs.readFileSync(file, 'utf8').replace(/^\uFEFF/, '');
+const rows = [];
+let previousYear = -Infinity;
+const seen = new Set();
+for (const [index, raw] of text.split(/\r?\n/).entries()) {
+  if (!raw || raw.startsWith('#')) continue;
+  const columns = raw.split('\t');
+  if (columns.length !== 6) throw new Error(`line ${index + 1}: expected 6 fields, got ${columns.length}`);
+  const [yearText, category, place, title, description, source] = columns;
+  const year = Number(yearText);
+  if (!Number.isInteger(year) || year === 0 || year < -100000 || year > 9999) throw new Error(`line ${index + 1}: invalid year`);
+  if (year < previousYear) throw new Error(`line ${index + 1}: events are not sorted chronologically`);
+  if (![category, place, title, description].every(value => value.trim())) throw new Error(`line ${index + 1}: blank required field`);
+  if (!/^https?:\/\//.test(source)) throw new Error(`line ${index + 1}: missing source URL`);
+  const key = `${year}\t${title}`;
+  if (seen.has(key)) throw new Error(`line ${index + 1}: duplicate event ${year} ${title}`);
+  seen.add(key);
+  rows.push({ year, category, title, description, source });
+  previousYear = year;
+}
+if (!rows.length || rows.length > 10000) throw new Error(`event count outside 1..10000: ${rows.length}`);
+if (new Set(rows.map(row => row.category)).size < 8) throw new Error('expected a broad mix of historical event categories');
+if (!rows.some(row => row.year === -146 && row.title.includes('迦太基') && row.description.includes('摧毁'))) throw new Error('missing the requested Rome-Carthage example at 146 BCE');
+if (rows[0].year > -2000 || rows[rows.length - 1].year < 2000) throw new Error('event dates do not span ancient to contemporary history');
+const yearHeader = fs.readFileSync(yearHeaderPath, 'utf8');
+const yearArray = yearHeader.match(/HISTORY_YEARS\[\]\s*=\s*\{([^}]*)\}/);
+if (!yearArray) throw new Error('could not read the playback timeline years');
+const years = yearArray[1].split(',').map(value => Number(value.trim())).filter(Number.isFinite);
+if (years.length < 2 || years.length > 1000 || years.some((year, index) => index > 0 && year >= years[index - 1])) throw new Error('playback years must be strictly descending and capped at 1,000');
+const outsidePlayback = rows.filter(row => !years.some((newer, index) => index + 1 < years.length && row.year >= (index + 1 === years.length - 1 ? years[index + 1] : years[index + 1] + 1) && row.year <= newer));
+if (outsidePlayback.length) throw new Error(`events will not appear in any playback interval: ${outsidePlayback.slice(0, 5).map(row => row.year).join(', ')}`);
+console.log(`PASS: ${rows.length} sourced events; ${new Set(rows.map(row => row.category)).size} categories; ${rows[0].year} to ${rows[rows.length - 1].year}; cap 10,000`);
+console.log('PASS: chronological order, required fields, unique date/title pairs, source URLs, and the 146 BCE Carthage event');
+console.log(`PASS: every event intersects a playback interval across ${years.length} timeline nodes`);

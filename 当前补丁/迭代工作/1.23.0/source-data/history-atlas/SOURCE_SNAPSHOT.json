@@ -1,0 +1,121 @@
+{
+  "sourceRepository": "https://github.com/laurencefwhite/history-atlas",
+  "sourceCommit": "05489efba5a5c188a95d00b7678fbf00a028c27f",
+  "upstreamPolityData": "Cliopatria (Seshat Global History Databank), CC BY 4.0",
+  "upstreamCitation": "Bennett et al. (2025), Scientific Data 12:247, DOI 10.1038/s41597-025-04516-9",
+  "sourceDataRepository": "https://github.com/Seshat-Global-History-Databank/cliopatria",
+  "sourceDataRelease": "v0.2.1",
+  "cliopatriaLicense": "CC BY 4.0",
+  "files": [
+    {
+      "file": "base.js",
+      "gitBlob": "daa8b7ddbdc0232cf9e200b6967350282a89a31b",
+      "characters": 563548
+    },
+    {
+      "file": "c00f.js",
+      "gitBlob": "c5322c2c829f640eb2c9f6f98b08087b0e7438e4",
+      "characters": 2883
+    },
+    {
+      "file": "c01f.js",
+      "gitBlob": "57da705384a13daa1f65ba01686606b18e305561",
+      "characters": 4647
+    },
+    {
+      "file": "c02f.js",
+      "gitBlob": "01fe68487272b59be01b0c07215fb33a7cbb257e",
+      "characters": 16895
+    },
+    {
+      "file": "c03f.js",
+      "gitBlob": "404ab31897f778bf154b9d09fc408351219cc3d6",
+      "characters": 37524
+    },
+    {
+      "file": "c04f.js",
+      "gitBlob": "1bec48ed7d1286341b93027193136831111f22ae",
+      "characters": 40246
+    },
+    {
+      "file": "c05f.js",
+      "gitBlob": "f5498b68a1e5b6e739da9a1762cba03d41802845",
+      "characters": 185602
+    },
+    {
+      "file": "c06f.js",
+      "gitBlob": "9983b59b88bb77a5bd83c7b2c25d45c7512d9e36",
+      "characters": 742017
+    },
+    {
+      "file": "c07f.js",
+      "gitBlob": "a3d110a2a3f9d6f197409b4253acd5c88e2f4b57",
+      "characters": 237254
+    },
+    {
+      "file": "c08f.js",
+      "gitBlob": "741185be172d00c19c73aa229fe7a702f5dfb5d5",
+      "characters": 504268
+    },
+    {
+      "file": "c09f.js",
+      "gitBlob": "23316ba4f520855f35a398e514f3a388cddd10f6",
+      "characters": 691590
+    },
+    {
+      "file": "c10f.js",
+      "gitBlob": "d0c2d7429cb4e0e77eee0dc0f4035961b594f12f",
+      "characters": 912535
+    },
+    {
+      "file": "c11f.js",
+      "gitBlob": "eea8f2227be1e0756679e7e9c620f1ea29a8b796",
+      "characters": 958831
+    },
+    {
+      "file": "c12f.js",
+      "gitBlob": "03b10a3f76fd9fd3fe043f44773cee01c4e5457e",
+      "characters": 1260270
+    },
+    {
+      "file": "c13f.js",
+      "gitBlob": "6148e696a933f3a2fca01b09d84ad3334622e4ba",
+      "characters": 764100
+    },
+    {
+      "file": "c14f.js",
+      "gitBlob": "19c75843b44e9ebb034f0491819495d2688d6146",
+      "characters": 895350
+    },
+    {
+      "file": "c15f.js",
+      "gitBlob": "b3f4ec06a0c331301fca84d0b67399e3b35eef0c",
+      "characters": 1170224
+    },
+    {
+      "file": "c16f.js",
+      "gitBlob": "779ae7448f4f23f2ca14ec9e68f8865a4771043a",
+      "characters": 1868941
+    },
+    {
+      "file": "c17f.js",
+      "gitBlob": "117c74441d212819b7cc36bec0f909c88a9e923f",
+      "characters": 1617848
+    },
+    {
+      "file": "c18f.js",
+      "gitBlob": "c2623373e8e14ab16634da1dbc46177d56b59dae",
+      "characters": 418807
+    },
+    {
+      "file": "CLIOPATRIA_LICENSE.md",
+      "gitBlob": "bf38657c151c480408ab3d645307b4e0ccc2d49e",
+      "characters": 404
+    },
+    {
+      "file": "HISTORY_ATLAS_README.md",
+      "gitBlob": "47311778243d086b799766f0bade79fa5db7b033",
+      "characters": 730
+    }
+  ]
+}

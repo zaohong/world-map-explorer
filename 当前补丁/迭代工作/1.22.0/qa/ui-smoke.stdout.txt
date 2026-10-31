@@ -1,0 +1,795 @@
+PASS: application launches with a visible main window
+PASS: executable contains an embedded multi-size application icon
+PASS: map controls, fullscreen mode, trial animation switch and information tabs exist
+PASS: application window remains responsive
+PASS: all map controls, including the trial animation switch, remain above the map image
+PASS: approximate transition mode is off by default
+PASS: application window remains responsive
+PASS: information tabs keep a distinct color for the selected page
+PASS: history event tab captured while no map cell is selected
+PASS: historical events advance smoothly in a continuous loop
+PASS: application window remains responsive
+PASS: mouse-wheel input scrolls the event list and temporarily pauses automation
+PASS: manually paused event panel remains visually stable with no flashing
+PASS: application window remains responsive
+PASS: grid lines are visible by default
+PASS: application window remains responsive
+PASS: map layer buttons change color when toggled
+PASS: grid-line switch hides only the drawn lines
+PASS: map screenshot captured with grid lines hidden
+PASS: application window remains responsive
+PASS: turning grid lines back on restores the same map appearance
+PASS: application window remains responsive
+PASS: map cells remain clickable and selectable while grid lines are hidden
+PASS: selected fine cell remains visible with grid lines hidden
+PASS: grid, search, thematic layers, history playback, trial animation and opacity controls exist
+PASS: four selectable grid levels are present
+PASS: grid option text 0 is readable
+PASS: grid option text 1 is readable
+PASS: grid option text 2 is readable
+PASS: grid option text 3 is readable
+PASS: application window remains responsive
+PASS: grid option selection 0
+PASS: standard map screenshot captured for level 0
+PASS: application window remains responsive
+PASS: grid option selection 1
+PASS: standard map screenshot captured for level 1
+PASS: application window remains responsive
+PASS: grid option selection 2
+PASS: standard map screenshot captured for level 2
+PASS: application window remains responsive
+PASS: grid option selection 3
+PASS: standard map screenshot captured for level 3
+PASS: five repeated maximum-detail frames remain visually stable (no flashing) 
+PASS: application window remains responsive
+PASS: searching a fine-cell ID preserves its grid level
+PASS: fine-cell search screenshot captured with parent-cell data visible
+PASS: application window remains responsive
+PASS: mouse-wheel zoom redraws the fine grid and retains its level
+PASS: application window remains responsive
+PASS: fine grid remains visible after zooming back
+PASS: application window remains responsive
+PASS: drag panning retains the selected fine-grid level
+PASS: application window remains responsive
+PASS: double-click reset retains the selected fine-grid level
+PASS: application window remains responsive
+PASS: fine grid remains visible over the land-cover layer
+PASS: application window remains responsive
+PASS: fine grid remains visible over the population layer
+PASS: application window remains responsive
+PASS: historical timeline has more than 165 nodes and does not exceed 1,000
+PASS: historical year option 0 is readable
+PASS: historical year option 1 is readable
+PASS: historical year option 2 is readable
+PASS: historical year option 3 is readable
+PASS: historical year option 4 is readable
+PASS: historical year option 5 is readable
+PASS: historical year option 6 is readable
+PASS: historical year option 7 is readable
+PASS: historical year option 8 is readable
+PASS: historical year option 9 is readable
+PASS: historical year option 10 is readable
+PASS: historical year option 11 is readable
+PASS: historical year option 12 is readable
+PASS: historical year option 13 is readable
+PASS: historical year option 14 is readable
+PASS: historical year option 15 is readable
+PASS: historical year option 16 is readable
+PASS: historical year option 17 is readable
+PASS: historical year option 18 is readable
+PASS: historical year option 19 is readable
+PASS: historical year option 20 is readable
+PASS: historical year option 21 is readable
+PASS: historical year option 22 is readable
+PASS: historical year option 23 is readable
+PASS: historical year option 24 is readable
+PASS: historical year option 25 is readable
+PASS: historical year option 26 is readable
+PASS: historical year option 27 is readable
+PASS: historical year option 28 is readable
+PASS: historical year option 29 is readable
+PASS: historical year option 30 is readable
+PASS: historical year option 31 is readable
+PASS: historical year option 32 is readable
+PASS: historical year option 33 is readable
+PASS: historical year option 34 is readable
+PASS: historical year option 35 is readable
+PASS: historical year option 36 is readable
+PASS: historical year option 37 is readable
+PASS: historical year option 38 is readable
+PASS: historical year option 39 is readable
+PASS: historical year option 40 is readable
+PASS: historical year option 41 is readable
+PASS: historical year option 42 is readable
+PASS: historical year option 43 is readable
+PASS: historical year option 44 is readable
+PASS: historical year option 45 is readable
+PASS: historical year option 46 is readable
+PASS: historical year option 47 is readable
+PASS: historical year option 48 is readable
+PASS: historical year option 49 is readable
+PASS: historical year option 50 is readable
+PASS: historical year option 51 is readable
+PASS: historical year option 52 is readable
+PASS: historical year option 53 is readable
+PASS: historical year option 54 is readable
+PASS: historical year option 55 is readable
+PASS: historical year option 56 is readable
+PASS: historical year option 57 is readable
+PASS: historical year option 58 is readable
+PASS: historical year option 59 is readable
+PASS: historical year option 60 is readable
+PASS: historical year option 61 is readable
+PASS: historical year option 62 is readable
+PASS: historical year option 63 is readable
+PASS: historical year option 64 is readable
+PASS: historical year option 65 is readable
+PASS: historical year option 66 is readable
+PASS: historical year option 67 is readable
+PASS: historical year option 68 is readable
+PASS: historical year option 69 is readable
+PASS: historical year option 70 is readable
+PASS: historical year option 71 is readable
+PASS: historical year option 72 is readable
+PASS: historical year option 73 is readable
+PASS: historical year option 74 is readable
+PASS: historical year option 75 is readable
+PASS: historical year option 76 is readable
+PASS: historical year option 77 is readable
+PASS: historical year option 78 is readable
+PASS: historical year option 79 is readable
+PASS: historical year option 80 is readable
+PASS: historical year option 81 is readable
+PASS: historical year option 82 is readable
+PASS: historical year option 83 is readable
+PASS: historical year option 84 is readable
+PASS: historical year option 85 is readable
+PASS: historical year option 86 is readable
+PASS: historical year option 87 is readable
+PASS: historical year option 88 is readable
+PASS: historical year option 89 is readable
+PASS: historical year option 90 is readable
+PASS: historical year option 91 is readable
+PASS: historical year option 92 is readable
+PASS: historical year option 93 is readable
+PASS: historical year option 94 is readable
+PASS: historical year option 95 is readable
+PASS: historical year option 96 is readable
+PASS: historical year option 97 is readable
+PASS: historical year option 98 is readable
+PASS: historical year option 99 is readable
+PASS: historical year option 100 is readable
+PASS: historical year option 101 is readable
+PASS: historical year option 102 is readable
+PASS: historical year option 103 is readable
+PASS: historical year option 104 is readable
+PASS: historical year option 105 is readable
+PASS: historical year option 106 is readable
+PASS: historical year option 107 is readable
+PASS: historical year option 108 is readable
+PASS: historical year option 109 is readable
+PASS: historical year option 110 is readable
+PASS: historical year option 111 is readable
+PASS: historical year option 112 is readable
+PASS: historical year option 113 is readable
+PASS: historical year option 114 is readable
+PASS: historical year option 115 is readable
+PASS: historical year option 116 is readable
+PASS: historical year option 117 is readable
+PASS: historical year option 118 is readable
+PASS: historical year option 119 is readable
+PASS: historical year option 120 is readable
+PASS: historical year option 121 is readable
+PASS: historical year option 122 is readable
+PASS: historical year option 123 is readable
+PASS: historical year option 124 is readable
+PASS: historical year option 125 is readable
+PASS: historical year option 126 is readable
+PASS: historical year option 127 is readable
+PASS: historical year option 128 is readable
+PASS: historical year option 129 is readable
+PASS: historical year option 130 is readable
+PASS: historical year option 131 is readable
+PASS: historical year option 132 is readable
+PASS: historical year option 133 is readable
+PASS: historical year option 134 is readable
+PASS: historical year option 135 is readable
+PASS: historical year option 136 is readable
+PASS: historical year option 137 is readable
+PASS: historical year option 138 is readable
+PASS: historical year option 139 is readable
+PASS: historical year option 140 is readable
+PASS: historical year option 141 is readable
+PASS: historical year option 142 is readable
+PASS: historical year option 143 is readable
+PASS: historical year option 144 is readable
+PASS: historical year option 145 is readable
+PASS: historical year option 146 is readable
+PASS: historical year option 147 is readable
+PASS: historical year option 148 is readable
+PASS: historical year option 149 is readable
+PASS: historical year option 150 is readable
+PASS: historical year option 151 is readable
+PASS: historical year option 152 is readable
+PASS: historical year option 153 is readable
+PASS: historical year option 154 is readable
+PASS: historical year option 155 is readable
+PASS: historical year option 156 is readable
+PASS: historical year option 157 is readable
+PASS: historical year option 158 is readable
+PASS: historical year option 159 is readable
+PASS: historical year option 160 is readable
+PASS: historical year option 161 is readable
+PASS: historical year option 162 is readable
+PASS: historical year option 163 is readable
+PASS: historical year option 164 is readable
+PASS: historical year option 165 is readable
+PASS: historical year option 166 is readable
+PASS: historical year option 167 is readable
+PASS: historical year option 168 is readable
+PASS: historical year option 169 is readable
+PASS: historical year option 170 is readable
+PASS: historical year option 171 is readable
+PASS: historical year option 172 is readable
+PASS: historical year option 173 is readable
+PASS: historical year option 174 is readable
+PASS: historical year option 175 is readable
+PASS: historical year option 176 is readable
+PASS: historical year option 177 is readable
+PASS: historical year option 178 is readable
+PASS: historical year option 179 is readable
+PASS: historical year option 180 is readable
+PASS: historical year option 181 is readable
+PASS: historical year option 182 is readable
+PASS: historical year option 183 is readable
+PASS: historical year option 184 is readable
+PASS: historical year option 185 is readable
+PASS: historical year option 186 is readable
+PASS: historical year option 187 is readable
+PASS: historical year option 188 is readable
+PASS: historical year option 189 is readable
+PASS: historical year option 190 is readable
+PASS: historical year option 191 is readable
+PASS: historical year option 192 is readable
+PASS: historical year option 193 is readable
+PASS: historical year option 194 is readable
+PASS: historical year option 195 is readable
+PASS: historical year option 196 is readable
+PASS: historical year option 197 is readable
+PASS: historical year option 198 is readable
+PASS: historical year option 199 is readable
+PASS: historical year option 200 is readable
+PASS: historical year option 201 is readable
+PASS: historical year option 202 is readable
+PASS: historical year option 203 is readable
+PASS: historical year option 204 is readable
+PASS: historical year option 205 is readable
+PASS: historical year option 206 is readable
+PASS: historical year option 207 is readable
+PASS: historical year option 208 is readable
+PASS: historical year option 209 is readable
+PASS: historical year option 210 is readable
+PASS: historical year option 211 is readable
+PASS: historical year option 212 is readable
+PASS: historical year option 213 is readable
+PASS: historical year option 214 is readable
+PASS: historical year option 215 is readable
+PASS: historical year option 216 is readable
+PASS: historical year option 217 is readable
+PASS: historical year option 218 is readable
+PASS: historical year option 219 is readable
+PASS: historical year option 220 is readable
+PASS: historical year option 221 is readable
+PASS: historical year option 222 is readable
+PASS: historical year option 223 is readable
+PASS: historical year option 224 is readable
+PASS: historical year option 225 is readable
+PASS: historical year option 226 is readable
+PASS: historical year option 227 is readable
+PASS: historical year option 228 is readable
+PASS: historical year option 229 is readable
+PASS: historical year option 230 is readable
+PASS: historical year option 231 is readable
+PASS: historical year option 232 is readable
+PASS: historical year option 233 is readable
+PASS: historical year option 234 is readable
+PASS: historical year option 235 is readable
+PASS: historical year option 236 is readable
+PASS: historical year option 237 is readable
+PASS: historical year option 238 is readable
+PASS: historical year option 239 is readable
+PASS: historical year option 240 is readable
+PASS: historical year option 241 is readable
+PASS: historical year option 242 is readable
+PASS: historical year option 243 is readable
+PASS: historical year option 244 is readable
+PASS: historical year option 245 is readable
+PASS: historical year option 246 is readable
+PASS: historical year option 247 is readable
+PASS: historical year option 248 is readable
+PASS: historical year option 249 is readable
+PASS: historical year option 250 is readable
+PASS: historical year option 251 is readable
+PASS: historical year option 252 is readable
+PASS: historical year option 253 is readable
+PASS: historical year option 254 is readable
+PASS: historical year option 255 is readable
+PASS: historical year option 256 is readable
+PASS: historical year option 257 is readable
+PASS: historical year option 258 is readable
+PASS: historical year option 259 is readable
+PASS: historical year option 260 is readable
+PASS: historical year option 261 is readable
+PASS: historical year option 262 is readable
+PASS: historical year option 263 is readable
+PASS: historical year option 264 is readable
+PASS: historical year option 265 is readable
+PASS: historical year option 266 is readable
+PASS: historical year option 267 is readable
+PASS: historical year option 268 is readable
+PASS: historical year option 269 is readable
+PASS: historical year option 270 is readable
+PASS: historical year option 271 is readable
+PASS: historical year option 272 is readable
+PASS: historical year option 273 is readable
+PASS: historical year option 274 is readable
+PASS: historical year option 275 is readable
+PASS: historical year option 276 is readable
+PASS: historical year option 277 is readable
+PASS: historical year option 278 is readable
+PASS: historical year option 279 is readable
+PASS: historical year option 280 is readable
+PASS: historical year option 281 is readable
+PASS: historical year option 282 is readable
+PASS: historical year option 283 is readable
+PASS: historical year option 284 is readable
+PASS: historical year option 285 is readable
+PASS: historical year option 286 is readable
+PASS: historical year option 287 is readable
+PASS: historical year option 288 is readable
+PASS: historical year option 289 is readable
+PASS: historical year option 290 is readable
+PASS: historical year option 291 is readable
+PASS: historical year option 292 is readable
+PASS: historical year option 293 is readable
+PASS: historical year option 294 is readable
+PASS: historical year option 295 is readable
+PASS: historical year option 296 is readable
+PASS: historical year option 297 is readable
+PASS: historical year option 298 is readable
+PASS: historical year option 299 is readable
+PASS: historical year option 300 is readable
+PASS: historical year option 301 is readable
+PASS: historical year option 302 is readable
+PASS: historical year option 303 is readable
+PASS: historical year option 304 is readable
+PASS: historical year option 305 is readable
+PASS: historical year option 306 is readable
+PASS: historical year option 307 is readable
+PASS: historical year option 308 is readable
+PASS: historical year option 309 is readable
+PASS: historical year option 310 is readable
+PASS: historical year option 311 is readable
+PASS: historical year option 312 is readable
+PASS: historical year option 313 is readable
+PASS: historical year option 314 is readable
+PASS: historical year option 315 is readable
+PASS: historical year option 316 is readable
+PASS: historical year option 317 is readable
+PASS: historical year option 318 is readable
+PASS: historical year option 319 is readable
+PASS: historical year option 320 is readable
+PASS: historical year option 321 is readable
+PASS: historical year option 322 is readable
+PASS: historical year option 323 is readable
+PASS: historical year option 324 is readable
+PASS: historical year option 325 is readable
+PASS: historical year option 326 is readable
+PASS: historical year option 327 is readable
+PASS: historical year option 328 is readable
+PASS: historical year option 329 is readable
+PASS: historical year option 330 is readable
+PASS: historical year option 331 is readable
+PASS: historical year option 332 is readable
+PASS: historical year option 333 is readable
+PASS: historical year option 334 is readable
+PASS: historical year option 335 is readable
+PASS: historical year option 336 is readable
+PASS: historical year option 337 is readable
+PASS: historical year option 338 is readable
+PASS: historical year option 339 is readable
+PASS: historical year option 340 is readable
+PASS: historical year option 341 is readable
+PASS: historical year option 342 is readable
+PASS: historical year option 343 is readable
+PASS: historical year option 344 is readable
+PASS: historical year option 345 is readable
+PASS: historical year option 346 is readable
+PASS: historical year option 347 is readable
+PASS: historical year option 348 is readable
+PASS: historical year option 349 is readable
+PASS: historical year option 350 is readable
+PASS: historical year option 351 is readable
+PASS: historical year option 352 is readable
+PASS: historical year option 353 is readable
+PASS: historical year option 354 is readable
+PASS: historical year option 355 is readable
+PASS: historical year option 356 is readable
+PASS: historical year option 357 is readable
+PASS: historical year option 358 is readable
+PASS: historical year option 359 is readable
+PASS: historical year option 360 is readable
+PASS: historical year option 361 is readable
+PASS: historical year option 362 is readable
+PASS: historical year option 363 is readable
+PASS: historical year option 364 is readable
+PASS: historical year option 365 is readable
+PASS: historical year option 366 is readable
+PASS: historical year option 367 is readable
+PASS: historical year option 368 is readable
+PASS: historical year option 369 is readable
+PASS: historical year option 370 is readable
+PASS: historical year option 371 is readable
+PASS: historical year option 372 is readable
+PASS: historical year option 373 is readable
+PASS: historical year option 374 is readable
+PASS: historical year option 375 is readable
+PASS: historical year option 376 is readable
+PASS: historical year option 377 is readable
+PASS: historical year option 378 is readable
+PASS: historical year option 379 is readable
+PASS: historical year option 380 is readable
+PASS: historical year option 381 is readable
+PASS: historical year option 382 is readable
+PASS: historical year option 383 is readable
+PASS: historical year option 384 is readable
+PASS: historical year option 385 is readable
+PASS: historical year option 386 is readable
+PASS: historical year option 387 is readable
+PASS: historical year option 388 is readable
+PASS: historical year option 389 is readable
+PASS: historical year option 390 is readable
+PASS: historical year option 391 is readable
+PASS: historical year option 392 is readable
+PASS: historical year option 393 is readable
+PASS: historical year option 394 is readable
+PASS: historical year option 395 is readable
+PASS: historical year option 396 is readable
+PASS: historical year option 397 is readable
+PASS: historical year option 398 is readable
+PASS: historical year option 399 is readable
+PASS: historical year option 400 is readable
+PASS: historical year option 401 is readable
+PASS: historical year option 402 is readable
+PASS: historical year option 403 is readable
+PASS: historical year option 404 is readable
+PASS: historical year option 405 is readable
+PASS: historical year option 406 is readable
+PASS: historical year option 407 is readable
+PASS: historical year option 408 is readable
+PASS: historical year option 409 is readable
+PASS: historical year option 410 is readable
+PASS: historical year option 411 is readable
+PASS: historical year option 412 is readable
+PASS: historical year option 413 is readable
+PASS: historical year option 414 is readable
+PASS: historical year option 415 is readable
+PASS: historical year option 416 is readable
+PASS: historical year option 417 is readable
+PASS: historical year option 418 is readable
+PASS: historical year option 419 is readable
+PASS: historical year option 420 is readable
+PASS: historical year option 421 is readable
+PASS: historical year option 422 is readable
+PASS: historical year option 423 is readable
+PASS: historical year option 424 is readable
+PASS: historical year option 425 is readable
+PASS: historical year option 426 is readable
+PASS: historical year option 427 is readable
+PASS: historical year option 428 is readable
+PASS: historical year option 429 is readable
+PASS: historical year option 430 is readable
+PASS: historical year option 431 is readable
+PASS: historical year option 432 is readable
+PASS: historical year option 433 is readable
+PASS: historical year option 434 is readable
+PASS: historical year option 435 is readable
+PASS: historical year option 436 is readable
+PASS: historical year option 437 is readable
+PASS: historical year option 438 is readable
+PASS: historical year option 439 is readable
+PASS: historical year option 440 is readable
+PASS: historical year option 441 is readable
+PASS: historical year option 442 is readable
+PASS: historical year option 443 is readable
+PASS: historical year option 444 is readable
+PASS: historical year option 445 is readable
+PASS: historical year option 446 is readable
+PASS: historical year option 447 is readable
+PASS: historical year option 448 is readable
+PASS: historical year option 449 is readable
+PASS: historical year option 450 is readable
+PASS: historical year option 451 is readable
+PASS: historical year option 452 is readable
+PASS: historical year option 453 is readable
+PASS: historical year option 454 is readable
+PASS: historical year option 455 is readable
+PASS: historical year option 456 is readable
+PASS: historical year option 457 is readable
+PASS: historical year option 458 is readable
+PASS: historical year option 459 is readable
+PASS: historical year option 460 is readable
+PASS: historical year option 461 is readable
+PASS: historical year option 462 is readable
+PASS: historical year option 463 is readable
+PASS: historical year option 464 is readable
+PASS: historical year option 465 is readable
+PASS: historical year option 466 is readable
+PASS: historical year option 467 is readable
+PASS: historical year option 468 is readable
+PASS: historical year option 469 is readable
+PASS: historical year option 470 is readable
+PASS: historical year option 471 is readable
+PASS: historical year option 472 is readable
+PASS: historical year option 473 is readable
+PASS: historical year option 474 is readable
+PASS: historical year option 475 is readable
+PASS: historical year option 476 is readable
+PASS: historical year option 477 is readable
+PASS: historical year option 478 is readable
+PASS: historical year option 479 is readable
+PASS: historical year option 480 is readable
+PASS: historical year option 481 is readable
+PASS: historical year option 482 is readable
+PASS: historical year option 483 is readable
+PASS: historical year option 484 is readable
+PASS: historical year option 485 is readable
+PASS: historical year option 486 is readable
+PASS: historical year option 487 is readable
+PASS: historical year option 488 is readable
+PASS: historical year option 489 is readable
+PASS: historical year option 490 is readable
+PASS: historical year option 491 is readable
+PASS: historical year option 492 is readable
+PASS: historical year option 493 is readable
+PASS: historical year option 494 is readable
+PASS: historical year option 495 is readable
+PASS: historical year option 496 is readable
+PASS: historical year option 497 is readable
+PASS: historical year option 498 is readable
+PASS: historical year option 499 is readable
+PASS: historical year option 500 is readable
+PASS: historical year option 501 is readable
+PASS: historical year option 502 is readable
+PASS: historical year option 503 is readable
+PASS: historical year option 504 is readable
+PASS: historical year option 505 is readable
+PASS: historical year option 506 is readable
+PASS: historical year option 507 is readable
+PASS: historical year option 508 is readable
+PASS: historical year option 509 is readable
+PASS: historical year option 510 is readable
+PASS: historical year option 511 is readable
+PASS: historical year option 512 is readable
+PASS: historical year option 513 is readable
+PASS: historical year option 514 is readable
+PASS: historical year option 515 is readable
+PASS: historical year option 516 is readable
+PASS: historical year option 517 is readable
+PASS: historical year option 518 is readable
+PASS: historical year option 519 is readable
+PASS: historical year option 520 is readable
+PASS: historical year option 521 is readable
+PASS: historical year option 522 is readable
+PASS: historical year option 523 is readable
+PASS: historical year option 524 is readable
+PASS: historical year option 525 is readable
+PASS: historical year option 526 is readable
+PASS: historical year option 527 is readable
+PASS: historical year option 528 is readable
+PASS: historical year option 529 is readable
+PASS: historical year option 530 is readable
+PASS: historical year option 531 is readable
+PASS: historical year option 532 is readable
+PASS: historical year option 533 is readable
+PASS: historical year option 534 is readable
+PASS: historical year option 535 is readable
+PASS: historical year option 536 is readable
+PASS: historical year option 537 is readable
+PASS: historical year option 538 is readable
+PASS: historical year option 539 is readable
+PASS: historical year option 540 is readable
+PASS: historical year option 541 is readable
+PASS: historical year option 542 is readable
+PASS: historical year option 543 is readable
+PASS: historical year option 544 is readable
+PASS: historical year option 545 is readable
+PASS: historical year option 546 is readable
+PASS: historical year option 547 is readable
+PASS: historical year option 548 is readable
+PASS: historical year option 549 is readable
+PASS: historical year option 550 is readable
+PASS: historical year option 551 is readable
+PASS: historical year option 552 is readable
+PASS: historical year option 553 is readable
+PASS: historical year option 554 is readable
+PASS: historical year option 555 is readable
+PASS: historical year option 556 is readable
+PASS: historical year option 557 is readable
+PASS: historical year option 558 is readable
+PASS: historical year option 559 is readable
+PASS: historical year option 560 is readable
+PASS: historical year option 561 is readable
+PASS: historical year option 562 is readable
+PASS: historical year option 563 is readable
+PASS: historical year option 564 is readable
+PASS: historical year option 565 is readable
+PASS: historical year option 566 is readable
+PASS: historical year option 567 is readable
+PASS: historical year option 568 is readable
+PASS: historical year option 569 is readable
+PASS: historical year option 570 is readable
+PASS: historical year option 571 is readable
+PASS: historical year option 572 is readable
+PASS: historical year option 573 is readable
+PASS: historical year option 574 is readable
+PASS: historical year option 575 is readable
+PASS: historical year option 576 is readable
+PASS: historical year option 577 is readable
+PASS: historical year option 578 is readable
+PASS: historical year option 579 is readable
+PASS: historical year option 580 is readable
+PASS: historical year option 581 is readable
+PASS: historical year option 582 is readable
+PASS: historical year option 583 is readable
+PASS: historical year option 584 is readable
+PASS: historical year option 585 is readable
+PASS: historical year option 586 is readable
+PASS: historical year option 587 is readable
+PASS: historical year option 588 is readable
+PASS: historical year option 589 is readable
+PASS: historical year option 590 is readable
+PASS: historical year option 591 is readable
+PASS: historical year option 592 is readable
+PASS: historical year option 593 is readable
+PASS: historical year option 594 is readable
+PASS: historical year option 595 is readable
+PASS: historical year option 596 is readable
+PASS: historical year option 597 is readable
+PASS: historical year option 598 is readable
+PASS: historical year option 599 is readable
+PASS: historical year option 600 is readable
+PASS: historical years are unique and span 3400 BCE through 2024 CE
+PASS: fill opacity starts at a readable 72 percent
+PASS: application window remains responsive
+PASS: World 2024 opens as an independent historical layer
+PASS: World 2024 screenshot captured at 627,200 cells
+PASS: application window remains responsive
+PASS: switching from 2024 to 1800 replaces the visible historical fill
+PASS: World 1800 screenshot captured after changing the year
+PASS: application window remains responsive
+PASS: switching back to 2024 restores the 2024 fill raster
+PASS: historical layer remains visually stable with no flashing
+PASS: application window remains responsive
+PASS: zero fill opacity restores the unobscured base map
+PASS: application window remains responsive
+PASS: application window remains responsive
+PASS: opacity slider changes map fill continuously from transparent to opaque
+PASS: historical map screenshot captured at full opacity
+PASS: historical year is selectable: 2024
+PASS: application window remains responsive
+PASS: World 2024 loads its own visible fill raster
+PASS: historical year is selectable: 1914
+PASS: application window remains responsive
+PASS: World 1914 loads its own visible fill raster
+PASS: historical year is selectable: 1800
+PASS: application window remains responsive
+PASS: World 1800 loads its own visible fill raster
+PASS: historical year is selectable: 1600
+PASS: application window remains responsive
+PASS: World 1600 loads its own visible fill raster
+PASS: World 1600 screenshot captured after switching years
+PASS: historical year is selectable: 1400
+PASS: application window remains responsive
+PASS: World 1400 loads its own visible fill raster
+PASS: World 1400 screenshot captured after switching years
+PASS: historical year is selectable: 1200
+PASS: application window remains responsive
+PASS: World 1200 loads its own visible fill raster
+PASS: World 1200 screenshot captured after switching years
+PASS: historical year is selectable: 1000
+PASS: application window remains responsive
+PASS: World 1000 loads its own visible fill raster
+PASS: World 1000 screenshot captured after switching years
+PASS: historical year is selectable: 476
+PASS: application window remains responsive
+PASS: World 476 loads its own visible fill raster
+PASS: historical year is selectable: -1000
+PASS: application window remains responsive
+PASS: World -1000 loads its own visible fill raster
+PASS: historical year is selectable: -3400
+PASS: application window remains responsive
+PASS: World -3400 loads its own visible fill raster
+PASS: history playback speed cycles up to 4x
+PASS: application window remains responsive
+PASS: trial transition mode can be enabled independently
+PASS: the slow playback speed gives the trial transition time to render
+PASS: playback begins at the oldest year before advancing
+PASS: 1914 is available as an event-bearing playback relay node
+PASS: enabled trial mode renders multiple intermediate fill frames during playback
+PASS: playback relays the 1914 event interval while the transition runs
+PASS: historical event tab stays visible while the timeline is playing
+PASS: pause freezes the selected year and offers resume
+PASS: trial animation can be turned off while paused
+PASS: resuming playback continues forward from the paused year
+PASS: application window remains responsive
+PASS: application window remains responsive
+PASS: history layer closes cleanly and restores the base map
+PASS: application window remains responsive
+PASS: application window remains responsive
+PASS: application window remains responsive
+PASS: World 2026 and the historical layer render together
+PASS: both map legends remain visible at separate lower corners
+PASS: application window remains responsive
+PASS: closing history preserves the World 2026 layer
+PASS: application window remains responsive
+PASS: shared fill opacity also hides World 2026 at zero percent
+PASS: application window remains responsive
+PASS: restoring opacity restores the unchanged World 2026 appearance
+PASS: application window remains responsive
+PASS: application window remains responsive
+PASS: application window remains responsive
+PASS: fill opacity does not change population data
+PASS: application window remains responsive
+PASS: application window remains responsive
+PASS: application window remains responsive
+PASS: application window remains responsive
+PASS: fill opacity does not change land-cover data
+PASS: application window remains responsive
+PASS: application window remains responsive
+PASS: thematic overlays can be disabled while the fine grid remains selected
+PASS: application window remains responsive
+PASS: World 2026 opens as its own country-fill layer
+PASS: World 2026 country-fill screenshot captured at 627,200 cells
+PASS: World 2026 layer remains visually stable with no flashing
+PASS: application window remains responsive
+PASS: World 2026 closes cleanly and restores the unchanged base map
+PASS: application window remains responsive
+PASS: application window remains responsive
+PASS: World 2026 toggles independently alongside land cover
+PASS: World 2026 adds its fill over the enabled land-cover layer
+PASS: World 2026 and land-cover layers render together
+PASS: application window remains responsive
+PASS: closing World 2026 preserves the previous land-cover layer
+PASS: application window remains responsive
+PASS: application window remains responsive
+PASS: application window remains responsive
+PASS: World 2026 adds its fill over the enabled population layer
+PASS: World 2026 and population layers render together
+PASS: application window remains responsive
+PASS: closing World 2026 preserves the previous population layer
+PASS: application window remains responsive
+PASS: application window remains responsive
+PASS: Natural Earth high-resolution map retains the selected fine-grid level
+PASS: Natural Earth original high-resolution map screenshot captured
+PASS: application window remains responsive
+PASS: World 2026 fill aligns with the high-resolution Natural Earth base map
+PASS: application window remains responsive
+PASS: World 2026 closes cleanly over the high-resolution base map
+PASS: application window remains responsive
+PASS: NASA map retains the selected fine-grid level
+PASS: NASA map screenshot captured with fine-grid level retained
+PASS: application window remains responsive
+PASS: World 2026 fill aligns with the NASA base map
+PASS: application window remains responsive
+PASS: World 2026 closes cleanly over the NASA base map
+PASS: application window remains responsive
+PASS: fullscreen button hides controls and expands the map to the display
+PASS: fullscreen map screenshot captured
+PASS: application window remains responsive
+PASS: Escape exits fullscreen and restores the previous window size
+PASS: application window remains responsive
+PASS: F11 enters fullscreen from the keyboard
+PASS: application window remains responsive
+PASS: Escape exits fullscreen after keyboard activation
+TOTAL: 794 passed, 0 failed (794 checks)
