@@ -6,17 +6,31 @@
 
 **当前公开版本：1.23.0** · [下载完整运行包](https://github.com/zaohong/world-map-explorer/releases/tag/v1.23.0) · [查看所有版本与附件](https://github.com/zaohong/world-map-explorer/releases)
 
-## 界面预览
+## 界面截图
 
-以下截图来自当前公开版本 1.23.0。完整界面与交互截图、自动检查记录见 [`1.23.0/qa`](./当前补丁/迭代工作/1.23.0/qa/)。
+以下展示图来自当前公开版本 1.23.0。地图底图统一使用 Natural Earth 10m 高清底图；NASA 专题图使用 NASA Blue Marble 及其 1 km、500 m 细节影像。截图的定位档位设为 627,200 格，细格放大图开启网格线。历史政权、2026 年国别、2023 年人口和 2020 年土地覆盖分别单独展示，历史透明度另有同视角对照。
 
-| 历史疆域与 2026 年国别分区 | 人口专题与网格定位 |
+| 细格定位与高清底图 | 历史疆域与透明度对照 |
 | --- | --- |
-| <img src="当前补丁/迭代工作/1.23.0/qa/ui-world2024-and-2026.png" width="100%" alt="历史疆域和 2026 年国别分区地图截图"> | <img src="当前补丁/迭代工作/1.23.0/qa/ui-population-fine.png" width="100%" alt="人口专题地图和网格定位截图"> |
+| [<img src="screenshots/02-fine-grid-location.png" width="100%" alt="日本区域的 627,200 格细格定位与 Natural Earth 高清底图">](./screenshots/02-fine-grid-location.png) | [<img src="screenshots/08-history-europe-1600-opacity-72.png" width="100%" alt="公元 1600 年欧洲历史政权填色，默认透明度 72%">](./screenshots/08-history-europe-1600-opacity-72.png) |
 
-| 历史事件面板 | 全屏地图 |
+| 历史填色 25% | 历史填色 100% |
 | --- | --- |
-| <img src="当前补丁/迭代工作/1.23.0/qa/ui-history-events.png" width="100%" alt="历史事件面板截图"> | <img src="当前补丁/迭代工作/1.23.0/qa/ui-map-fullscreen.png" width="100%" alt="全屏地图截图"> |
+| [<img src="screenshots/08a-history-europe-1600-opacity-25.png" width="100%" alt="同一欧洲历史疆域视角，填色透明度 25%">](./screenshots/08a-history-europe-1600-opacity-25.png) | [<img src="screenshots/08b-history-europe-1600-opacity-100.png" width="100%" alt="同一欧洲历史疆域视角，填色透明度 100%">](./screenshots/08b-history-europe-1600-opacity-100.png) |
+
+| 2026 年国别分区 | WorldPop 2023 人口估算 |
+| --- | --- |
+| [<img src="screenshots/09-country-regions-2026.png" width="100%" alt="2026 年国家与地区分类填色，使用高清底图">](./screenshots/09-country-regions-2026.png) | [<img src="screenshots/11-population-2023.png" width="100%" alt="WorldPop 2023 人口密度估算专题图，使用高清底图">](./screenshots/11-population-2023.png) |
+
+| 2020 年土地覆盖 | NASA Blue Marble 底图 |
+| --- | --- |
+| [<img src="screenshots/13-land-cover-2020.png" width="100%" alt="2020 年土地覆盖专题图，使用高清底图">](./screenshots/13-land-cover-2020.png) | [<img src="screenshots/16-nasa-blue-marble.png" width="100%" alt="NASA Blue Marble 全球底图">](./screenshots/16-nasa-blue-marble.png) |
+
+| NASA 1 km 细节 | NASA 500 m 细节 |
+| --- | --- |
+| [<img src="screenshots/17-nasa-detail-1km.png" width="100%" alt="NASA 1 km 高分辨率卫星影像细节">](./screenshots/17-nasa-detail-1km.png) | [<img src="screenshots/18-nasa-detail-500m.png" width="100%" alt="NASA 500 m 高分辨率卫星影像细节">](./screenshots/18-nasa-detail-500m.png) |
+
+完整 22 张展示图（含多个历史时期、地区放大图、专题图层、历史事件和全屏地图）见[截图画廊](./screenshots/README.md)。归档检查素材另见 [`1.23.0/qa`](./当前补丁/迭代工作/1.23.0/qa/)。
 
 ## 功能一览
 
@@ -47,6 +61,7 @@
 | [`当前补丁/迭代工作/1.23.0/native`](./当前补丁/迭代工作/1.23.0/native/) | Windows 主程序、专题数据生成工具及相关源码 |
 | [`当前补丁/迭代工作/1.23.0/source-data`](./当前补丁/迭代工作/1.23.0/source-data/) | 历史疆域、历史事件、Natural Earth 输入和来源说明 |
 | [`当前补丁/迭代工作/1.23.0/qa`](./当前补丁/迭代工作/1.23.0/qa/) | 自动检查源码、运行记录和 35 张界面截图 |
+| [`screenshots`](./screenshots/) | 按专题整理的 22 张高清界面展示图，均可点击查看原图 |
 | [`当前补丁/迭代工作/1.22.0`](./当前补丁/迭代工作/1.22.0/) | 保留的旧版源码、截图和检查记录 |
 | [`当前补丁/迭代工作/必要数据源`](./当前补丁/迭代工作/必要数据源/) | 原始数据说明和重建工具 |
 | [`交接文档`](./交接文档/) | 架构、来源、校准和历史变更资料 |
