@@ -1,6 +1,6 @@
 # 1.23.0 界面截图画廊
 
-本目录按“基础地图与专题”和“历史政权”两部分整理了 35 张完整界面 PNG。多数原图尺寸为 1456 × 868 像素；全屏地图为 1440 × 900 像素。点击图片可打开原图。
+本目录按“基础地图与专题”和“历史政权”两部分整理了 35 张完整界面 PNG。多数原图尺寸为 1456 × 868 像素；全屏地图为 1440 × 900 像素。点击图片可打开原图。英文界面精选图见[English screenshot selection](./README.en.md)；两张预览图来自尚未发布的本地双语版本，当前 v1.23.0 下载包仍为中文界面，数据库内容暂不翻译。
 
 - Natural Earth 部分使用 Natural Earth 10m 高清底图；NASA 部分使用 NASA Blue Marble 与应用内可用的 1 km、500 m 细节影像。
 - 网格档位统一选择 627,200 格。网格线对照图使用相同地点、相同缩放比例，仅切换网格线状态。
@@ -29,9 +29,9 @@
 
 | 显示网格线 | 隐藏网格线 |
 | --- | --- |
-| **02 · 日本局部细格，网格线开启**<br><a href="./02-fine-grid-location.png"><img src="./02-fine-grid-location.png" width="100%" alt="日本局部细格与网格线开启状态"></a> | **02a · 同一视角，网格线关闭**<br><a href="./02a-fine-grid-location-no-gridlines.png"><img src="./02a-fine-grid-location-no-gridlines.png" width="100%" alt="日本局部细格与网格线关闭状态"></a> |
+| **02 · 日本局部高精度网格定位，网格线开启**<br><a href="./02-fine-grid-location.png"><img src="./02-fine-grid-location.png" width="100%" alt="日本局部高精度网格定位与网格线开启状态"></a> | **02a · 同一视角，网格线关闭**<br><a href="./02a-fine-grid-location-no-gridlines.png"><img src="./02a-fine-grid-location-no-gridlines.png" width="100%" alt="日本局部高精度网格定位与网格线关闭状态"></a> |
 
-非洲中部的细格定位与网格线示例见 **03**：<a href="./03-africa-detail.png"><img src="./03-africa-detail.png" width="50%" alt="非洲中部细格定位与网格线"></a>
+非洲中部的高精度网格定位与网格线示例见 **03**：<a href="./03-africa-detail.png"><img src="./03-africa-detail.png" width="50%" alt="非洲中部高精度网格定位与网格线"></a>
 
 ### 人口与土地覆盖
 

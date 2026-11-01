@@ -1,3 +1,46 @@
+<!-- ENGLISH README SECTION -->
+# World Map Explorer
+
+**Offline world maps · Four grid levels · Historical and thematic layers**
+
+World Map Explorer is a Windows 10/11 desktop application for browsing and querying a global map offline. It combines Natural Earth and NASA basemaps with coordinate-grid lookup, historical-boundary overlays, recorded events, population estimates, and 2020 land-cover categories.
+
+[English](#world-map-explorer) · 简体中文说明见本页下方折叠部分。
+
+## English UI preview
+
+| NASA Blue Marble overview | 1914 historical boundaries on NASA |
+| --- | --- |
+| [<img src="screenshots/en-preview/world-map-explorer-ui-en.png" width="100%" alt="English interface over the NASA Blue Marble basemap">](screenshots/en-preview/world-map-explorer-ui-en.png) | [<img src="screenshots/en-preview/historical-boundaries-nasa-1914-en.png" width="100%" alt="1914 historical-boundary overlay on NASA Blue Marble">](screenshots/en-preview/historical-boundaries-nasa-1914-en.png) |
+
+These two images show a local preview of the bilingual interface. The downloadable **v1.23.0 release remains Chinese-only**; the bilingual program update has not been published. The large data files are unchanged, so region names and database narratives may still appear in Chinese.
+
+## What it includes
+
+- **Basemaps:** Natural Earth 10m and NASA Blue Marble, with additional high-resolution map detail available in the application.
+- **Grid lookup:** 9,800, 39,200, 156,800, or 627,200 latitude/longitude cells. Search by grid ID, coordinates, place, or land-cover category.
+- **Historical browsing:** 601 year points from 3400 BCE to 2024 CE, plus a timeline of 164 recorded events across 45 categories.
+- **Thematic layers:** Historical boundaries, 2026 country and region categories, WorldPop 2023 population estimates, and 2020 land cover.
+- **Map controls:** Zoom, pan, full-screen view, grid-line toggle, layer opacity, and historical playback.
+
+## Data notes
+
+The grid is based on latitude and longitude, so cells are not equal in area. The finer grid improves location precision; most terrain, place, and population summaries remain associated with the original 9,800-region dataset. Population values are model estimates, not census counts. Historical coverage varies by place and year; blank cells indicate no matching source record and do not imply an uninhabited area or a current legal border. Country colors are categorical and do not represent numeric values.
+
+The project includes a 35-image gallery of the current release and a separate [English screenshot selection](screenshots/README.en.md). The full gallery is organized by basemap, thematic layer, year, zoom level, opacity, and grid-line state.
+
+## Download and run
+
+The current public release is **v1.23.0**. Download [WorldMapExplorer-1.23.0.zip](https://github.com/zaohong/world-map-explorer/releases/tag/v1.23.0), extract the complete folder, then run `WorldMapExplorer.exe`. Keep the bundled `assets`, `data`, and `licenses` folders beside the executable. The archive SHA-256 is `476C02639BEADC6D1F3A42915A8894BE36CCAE478D16283BB48808BE712B0979`.
+
+## Repository and licensing
+
+The repository contains application source, build inputs, QA records, data-source notes, and screenshots. The compiled Windows runtime is distributed through the Release archive. Third-party datasets retain their own licenses: WorldPop attribution is provided under CC BY 4.0, and Natural Earth data is public domain. The application source does not currently declare a separate open-source license; public source visibility does not grant additional redistribution or commercial rights.
+
+---
+<details>
+<summary>简体中文说明（点击展开）</summary>
+
 # 世界地图探索器
 
 **离线世界地图 · 四级网格定位 · 历史与专题图层**
@@ -5,6 +48,8 @@
 世界地图探索器是一款适用于 Windows 10/11 的离线地图工具。它把全球底图、多级经纬网格和历史及自然地理资料放在同一界面中，支持按网格编号、坐标、地点和土地覆盖类别定位与查询。
 
 **当前公开版本：1.23.0** · [下载完整运行包](https://github.com/zaohong/world-map-explorer/releases/tag/v1.23.0) · [查看所有版本与附件](https://github.com/zaohong/world-map-explorer/releases)
+
+> 说明：当前公开下载的 v1.23.0 仍是中文界面。上方英文界面截图来自尚未发布的本地双语预览；数据库中的地区名称与叙述暂未翻译，因此部分查询结果仍可能显示中文。
 
 ## 界面截图
 
@@ -18,7 +63,7 @@
 
 | 627,200 格 · 网格线开启 | 同一地点 · 网格线关闭 |
 | --- | --- |
-| [<img src="screenshots/02-fine-grid-location.png" width="100%" alt="日本 627,200 格细格定位，网格线开启">](./screenshots/02-fine-grid-location.png) | [<img src="screenshots/02a-fine-grid-location-no-gridlines.png" width="100%" alt="日本同一细格视角，网格线关闭">](./screenshots/02a-fine-grid-location-no-gridlines.png) |
+| [<img src="screenshots/02-fine-grid-location.png" width="100%" alt="日本 627,200 格高精度网格定位，网格线开启">](./screenshots/02-fine-grid-location.png) | [<img src="screenshots/02a-fine-grid-location-no-gridlines.png" width="100%" alt="日本同一网格视角，网格线关闭">](./screenshots/02a-fine-grid-location-no-gridlines.png) |
 
 | 欧洲高清局部 | 非洲高清局部 |
 | --- | --- |
@@ -103,3 +148,6 @@ Git 仓库包含应用源码、构建输入、检查工具、记录和截图；�
 ## 数据来源与许可
 
 第三方数据和资源保留各自的来源说明与许可，详见运行包内的 `DATA_SOURCES.md`、`licenses/` 和源码目录中的来源文件。WorldPop 数据按 CC BY 4.0 保留署名；Natural Earth 数据为公有领域资料。应用源码目前未单独指定开源许可证；公开浏览源码不代表取得未明确授权内容的再分发或商用许可。
+
+
+</details>
