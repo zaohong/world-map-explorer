@@ -1,0 +1,26 @@
+using System;using System.Diagnostics;using System.Drawing;using System.Drawing.Imaging;using System.IO;using System.Runtime.InteropServices;using System.Security.Cryptography;using System.Text;using System.Threading;
+class RouteUiChecks{
+ struct R{public int l,t,r,b;}
+ [DllImport("user32.dll")]static extern IntPtr GetDlgItem(IntPtr w,int id);
+ [DllImport("user32.dll")]static extern IntPtr SendMessage(IntPtr w,uint m,IntPtr a,IntPtr b);
+ [DllImport("user32.dll",CharSet=CharSet.Unicode)]static extern IntPtr SendMessage(IntPtr w,uint m,IntPtr a,StringBuilder b);
+ [DllImport("user32.dll")]static extern bool PostMessage(IntPtr w,uint m,IntPtr a,IntPtr b);
+ [DllImport("user32.dll",CharSet=CharSet.Unicode)]static extern IntPtr FindWindow(string c,string t);
+ [DllImport("user32.dll")]static extern bool GetWindowRect(IntPtr w,out R r);
+ [DllImport("user32.dll")]static extern bool PrintWindow(IntPtr w,IntPtr dc,uint flags);
+ [DllImport("user32.dll")]static extern bool SetWindowPos(IntPtr w,IntPtr z,int x,int y,int width,int height,uint flags);
+ static int checks=0;static void Check(bool ok,string name){if(!ok)throw new Exception(name);checks++;Console.WriteLine("PASS "+name);}
+ static void Click(IntPtr w,int id){SendMessage(GetDlgItem(w,id),0xf5,IntPtr.Zero,IntPtr.Zero);Thread.Sleep(120);}
+ static string Text(IntPtr w){var b=new StringBuilder(100000);SendMessage(w,0xd,new IntPtr(b.Capacity),b);return b.ToString();}
+ static void Select(IntPtr w,int index){var c=GetDlgItem(w,1041);SendMessage(c,0x14e,new IntPtr(index+1),IntPtr.Zero);SendMessage(w,0x111,new IntPtr((1<<16)|1041),c);Thread.Sleep(120);}
+ static Bitmap Snapshot(IntPtr w){R r;GetWindowRect(w,out r);var image=new Bitmap(r.r-r.l,r.b-r.t);using(var g=Graphics.FromImage(image)){var dc=g.GetHdc();PrintWindow(w,dc,2);g.ReleaseHdc(dc);}return image;}
+ static string Hash(IntPtr w){R outer,back,zoom;GetWindowRect(w,out outer);GetWindowRect(GetDlgItem(w,1076),out back);GetWindowRect(GetDlgItem(w,1051),out zoom);int left=back.l-10,top=back.t-10,width=zoom.l+118-left;using(var b=Snapshot(w))using(var crop=b.Clone(new Rectangle(left-outer.l+10,top-outer.t+48,width-20,width/2-130),PixelFormat.Format32bppArgb))using(var ms=new MemoryStream()){crop.Save(ms,ImageFormat.Png);return Convert.ToBase64String(SHA256.Create().ComputeHash(ms.ToArray()));}}
+ static void Shot(IntPtr w,string folder,string name){using(var b=Snapshot(w))b.Save(Path.Combine(folder,name+".png"),ImageFormat.Png);}
+ static int Main(string[] a){Directory.CreateDirectory(a[1]);var start=new ProcessStartInfo(a[0]){UseShellExecute=false,WorkingDirectory=Path.GetDirectoryName(a[0])};start.EnvironmentVariables["LOCALAPPDATA"]=Path.Combine(a[1],"profile");var process=Process.Start(start);IntPtr w=IntPtr.Zero;try{
+  for(int i=0;i<180;i++){process.Refresh();w=process.MainWindowHandle;if(w!=IntPtr.Zero&&GetDlgItem(w,1041)!=IntPtr.Zero)break;Thread.Sleep(100);}Thread.Sleep(600);Check(w!=IntPtr.Zero,"application opens");Check(SendMessage(GetDlgItem(w,1041),0x146,IntPtr.Zero,IntPtr.Zero).ToInt32()==43,"42 routes plus empty choice");Click(w,1072);
+  for(int index=30;index<42;++index){Select(w,index);Click(w,1045);Check(SendMessage(GetDlgItem(w,1041),0x147,IntPtr.Zero,IntPtr.Zero).ToInt32()==index+1,"new route selectable and fits: "+index);if(index==30||index==31||index==35||index==41)Shot(w,a[1],"route-"+index+"-zh");}
+  Select(w,30);Click(w,1045);Click(w,1044);var notes=FindWindow("WorldMapExplorerRouteNotes",null);Check(notes!=IntPtr.Zero,"source notes open");var body=Text(GetDlgItem(notes,1));Check(body.Contains("596")&&body.Contains("407")&&body.Contains("darwin-online.org.uk"),"logged route exposes factual counts and original source");Check(body.Contains("此前断开")&&body.Contains("不等于真实旅程里程"),"gaps and distance meaning are disclosed");Click(notes,2);
+  Click(w,1040);Check(Text(GetDlgItem(w,1040)).Contains("暂停"),"route starts playing");Thread.Sleep(500);Click(w,1040);Check(Text(GetDlgItem(w,1040)).Contains("继续"),"route pauses and offers continuation");var paused=Hash(w);Thread.Sleep(400);Check(paused==Hash(w),"paused route remains stable");Click(w,1040);Thread.Sleep(350);Click(w,1040);Check(Hash(w)!=paused,"resuming advances the drawn route");
+  Click(w,1024);Click(w,1044);notes=FindWindow("WorldMapExplorerRouteNotes",null);Check(Text(GetDlgItem(notes,1)).Contains("Connection length"),"English notes use distance and source terms");Click(notes,2);SetWindowPos(w,IntPtr.Zero,10,10,1024,650,4);Thread.Sleep(200);R slider,region;GetWindowRect(GetDlgItem(w,1081),out slider);GetWindowRect(GetDlgItem(w,1018),out region);Check(slider.r<=region.l-16,"narrow route slider stays outside the region panel");Shot(w,a[1],"route-small-en");Click(w,1023);Shot(w,a[1],"route-fullscreen-en");PostMessage(w,0x100,new IntPtr(0x1b),IntPtr.Zero);Thread.Sleep(100);Click(w,1043);Check(SendMessage(GetDlgItem(w,1041),0x147,IntPtr.Zero,IntPtr.Zero)==IntPtr.Zero,"hide route resets selection");Console.WriteLine(checks+" route UI checks passed");return 0;
+ }catch(Exception e){Console.WriteLine("FAIL "+e);return 1;}finally{var notes=FindWindow("WorldMapExplorerRouteNotes",null);if(notes!=IntPtr.Zero)PostMessage(notes,0x10,IntPtr.Zero,IntPtr.Zero);if(!process.HasExited){PostMessage(w,0x10,IntPtr.Zero,IntPtr.Zero);if(!process.WaitForExit(7000))process.Kill();}}}
+}
